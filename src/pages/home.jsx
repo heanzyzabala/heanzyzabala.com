@@ -105,11 +105,20 @@ export default function Home() {
                                             tags={["express", "javascript", "mongodb"]}
                                         />
                                     </Grid.Column>
+                                    <Grid.Column>
+                                        <Project
+                                            name="Portfolio Website"
+                                            github="https://github.com/heanzyzabala/heanzyzabala.com"
+                                            external="https://heanzyzabala.com"
+                                            description="My personal portfolio website made with react and semantic-ui."
+                                            tags={["react", "react-hooks", "javascript"]}
+                                        />
+                                    </Grid.Column>
                                 </Grid.Row>
                             </Grid>
                             <Grid>
                                 <Grid.Column>
-                                    <Label basic as="a" href="https://github.com/heanzyzabala" >
+                                    <Label basic as="a" href="https://github.com/heanzyzabala" target="_link" >
                                         <Icon name="github" /> More
                                     </Label>
                                 </Grid.Column>
