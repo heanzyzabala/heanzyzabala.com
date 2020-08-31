@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
     Container,
     Segment,
@@ -11,38 +12,42 @@ import {
     Icon,
 } from 'semantic-ui-react';
 
+import {
+    Item,
+    Project
+} from '../components';
+
 import Me from '../static/square-image.jpg';
-import { Item, Project } from '../components';
 
 export default function Home() {
     return (
         <>
             <Segment padded>
-                <Grid textAlign="center" style={{ paddingTop: '5em' }}>
-                    <Grid.Column mobile={16} computer={15} widescreen={15}>
+                <Grid textAlign="center" style={{ paddingTop: '3em' }}>
+                    <Grid.Column mobile={16} computer={13} widescreen={14}>
                         <Image src={Me} size="small" verticalAlign="middle" circular />
                         <Header>
                             Hi. I'm Heanzy Zabala
-                               <Header.Subheader>
+                            <Header.Subheader>
                                 Software Engineer <a style={{ fontWeight: 'bold' }} href="https://www.paymaya.com" > @ PayMaya PH </a>
-                                </Header.Subheader>
+                            </Header.Subheader>
                         </Header>
-                            <List horizontal size="large" style={{ marginTop: '0em' }}>
-                                 <Item link="mailto://heanzy.zabala@gmail.com" iconName="mail" />
-                                 <Item link="https://github.com/heanzyzabala" iconName="github" />
-                                 <Item link="https://linkedin.com/in/heanzyzabala" iconName="linkedin" />
-                                 <Item link="https://medium.com/@heanzy.zabala" iconName="medium" />
-                            </List>
+                        <List horizontal size="huge" style={{ marginTop: '0em' }}>
+                            <Item link="mailto://heanzy.zabala@gmail.com" iconName="mail" />
+                            <Item link="https://github.com/heanzyzabala" iconName="github" />
+                            <Item link="https://linkedin.com/in/heanzyzabala" iconName="linkedin" />
+                            <Item link="https://medium.com/@heanzy.zabala" iconName="medium" />
+                        </List>
                         <Divider horizontal>
                             <Header as="h4" textAlign="center">
                                 About
                             </Header>
                         </Divider>
                         <Container>
-                            <Grid centered textAlign="center">
-                                <Grid.Column mobile={16} computer={10} widescreen={10}>
-                                    I'm a Software Engineer from the Philippines. I enjoy designing and creating software that delights both users and developers. 
-                                    In my spare time, I try and explore different technologies and see how can they be applied.
+                            <Grid centered>
+                                <Grid.Column mobile={16} computer={10} widescreen={10} textAlign="center">
+                                    <p>I'm a Software Engineer from the Philippines. I enjoy designing and creating software that delights both users and developers.
+                                    In my spare time, I try and explore different technologies and see how can they be applied.</p>
                                 </Grid.Column>
                             </Grid>
                         </Container>
@@ -104,7 +109,7 @@ export default function Home() {
                             </Grid>
                             <Grid>
                                 <Grid.Column>
-                                    <Label basic as="a" href="https://github.com/heanzyzabala">
+                                    <Label basic as="a" href="https://github.com/heanzyzabala" >
                                         <Icon name="github" /> More
                                     </Label>
                                 </Grid.Column>
@@ -112,9 +117,21 @@ export default function Home() {
                         </Segment>
                         <Divider horizontal>
                             <Header as="h4" textAlign="center">
-                                Contact Me
+                                Contact
                             </Header>
                         </Divider>
+                        <Segment basic>
+                            <Grid centered columns={1}>
+                                <Grid.Column textAlign="center">
+                                    <p>
+                                        Feel free to contact me if you have any questions:
+                                    </p>
+                                    <Label basic="as" href="mailto://heanzy.zabala@gmail.com" empty>
+                                        <Icon name="mail" /> Send me a mail
+                                    </Label>
+                                </Grid.Column>
+                            </Grid>
+                        </Segment>
                     </Grid.Column>
                 </Grid>
             </Segment>
