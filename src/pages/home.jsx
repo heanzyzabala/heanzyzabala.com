@@ -47,7 +47,7 @@ export default function Home() {
                             <Grid centered>
                                 <Grid.Column mobile={16} computer={10} widescreen={10} textAlign="center">
                                     <p>I'm a Software Engineer from the Philippines. I enjoy designing and creating software that delights both users and developers.
-                                    In my spare time, I try and explore different technologies and see how can they be applied.</p>
+                                    In my spare time, I like to try out and experiment with new techologies, play instruments, do digital arts and recently, trading cryptos.</p>
                                 </Grid.Column>
                             </Grid>
                         </Container>
