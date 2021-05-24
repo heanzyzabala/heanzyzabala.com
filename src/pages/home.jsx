@@ -29,7 +29,7 @@ export default function Home() {
                         <Header>
                             Hi. I'm Heanzy Zabala
                             <Header.Subheader>
-                                Software Engineer <a style={{ fontWeight: 'bold' }} href="https://www.paymaya.com" > @ PayMaya PH </a>
+                                Software Engineer <a style={{ fontWeight: 'bold' }} href="https://www.siteminder.com/" > @ SiteMinder AU </a>
                             </Header.Subheader>
                         </Header>
                         <List horizontal size="huge" style={{ marginTop: '0em' }}>
@@ -47,7 +47,7 @@ export default function Home() {
                             <Grid centered>
                                 <Grid.Column mobile={16} computer={10} widescreen={10} textAlign="center">
                                     <p>I'm a Software Engineer from the Philippines. I enjoy designing and creating software that delights both users and developers.
-                                    In my spare time, I like to try out and experiment with new techologies, play instruments, do digital arts and recently, trading cryptos.</p>
+                                    I play instruments, create digital arts, and play video games in my spare time. </p>
                                 </Grid.Column>
                             </Grid>
                         </Container>
